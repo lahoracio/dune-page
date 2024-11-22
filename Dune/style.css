@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: #111;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.header {
+    display: flex;
+    align-items: center;
+    padding: 20px 50px;
+    background: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: red;
+    margin-right: 30px;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.auth {
+    margin-left: auto;
+    font-size: 14px;
+}
+
+.auth a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 100%;
+    background: url('./dune_1947.webp') no-repeat center center;
+    background-size: cover;
+    padding: 50px;
+    position: relative;
+}
+
+.overlay{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+/* Left Content */
+.content-left {
+    position: relative;
+    z-index: 2;
+    text-align: left;
+    max-width: 40%;
+}
+
+.content-left h1 {
+    margin-bottom: 10px;
+}
+
+.content-left p {
+    margin: 5px 0;
+}
+
+.buttons {
+    margin: 20px 0;
+}
+
+.btn-primary, .btn-secondary {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.btn-primary {
+    background-color: #1f80e0;
+    color: white;
+}
+
+.btn-secondary {
+    background-color: #333;
+    color: white;
+}
+
+/* Right Content (Thumbnails) */
+.thumbnails {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 20px;
+    position: relative;
+    z-index: 2;
+    max-width: 40%;
+}
+
+.poster-images, .actor-images {
+    display: flex;
+    gap: 10px;
+}
+
+.poster-images img, .actor-images img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 2px solid white;
+}
+
